@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<unistd.h>
+#include<string.h>
 
 #include"vic_timings.h"
 
@@ -103,6 +104,7 @@ int command_dmt(int argc, char **argv)
 
     print_display_mode(dm);
 
+    return 0;
 }
 int command_vic(int argc, char **argv)
 {
@@ -135,7 +137,6 @@ int command_vic(int argc, char **argv)
 
 int main(int argc, char **argv)
 {
-    int opt, vic;
     enum MODE mode = MODE_UNKNOWN;
     program_name = argv[0];
 
